@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering College | About & Academic Programs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" aria-label="Main Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span role="img" aria-label="Bald Eagle Mascot">🦅</span>
+                <span>ENGINEERING COLLEGE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <button id="toneToggleBtn" class="btn btn-sm btn-outline-eagle" type="button">Tone: Deep Navy</button>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-eagle btn-sm" href="registration.html">Apply Now →</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <!-- Секция About -->
+        <section class="mb-5 pb-4 border-bottom border-secondary">
+            <span class="section-label">About Engineering College</span>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-6 mb-3">Structured Like a Research Lab, Paced Like a Tech Studio.</h1>
+                    <p class="text-secondary mb-0">
+                        Inspired by the sharp vision of our mascot, the <strong>Bald Eagle</strong>, Engineering College replaces fragmented semester schedules with focused 3-week modular sprints. Students master one technical subject at a time under industry mentors.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hs-grid-box">
+                        <h2 class="h6 text-info text-uppercase">Why the Bald Eagle?</h2>
+                        <p class="small text-secondary mb-0">
+                            The Bald Eagle represents high-altitude perspective and engineering precision—teaching students to see both the macro architecture and the micro line of code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Фильтр программ на JavaScript -->
+        <section aria-labelledby="catalog-title">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+                <div>
+                    <span class="section-label">Interactive Directory</span>
+                    <h2 id="catalog-title" class="h3 mb-0">Undergraduate & Diploma Programs</h2>
+                </div>
+                <div class="d-flex flex-wrap gap-2" role="group" aria-label="Filter programs by department">
+                    <button type="button" class="btn btn-sm btn-eagle filter-btn" data-filter="all">All Tracks (6)</button>
+                    <button type="button" class="btn btn-sm btn-outline-eagle filter-btn" data-filter="computing">Computing & AI</button>
+                    <button type="button" class="btn btn-sm btn-outline-eagle filter-btn" data-filter="bioscience">Bio & Eco Engineering</button>
+                    <button type="button" class="btn btn-sm btn-outline-eagle filter-btn" data-filter="security">Systems & Cyber</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 program-card-item" data-category="computing">
+                    <article class="hs-grid-box">
+                        <span class="section-label">Computing & AI</span>
+                        <h3 class="h5">Software Engineering</h3>
+                        <p class="text-secondary small">Java, Python, C++, Object-Oriented Design, and full-stack web applications.</p>
+                        <ul class="small text-secondary ps-3 mb-4">
+                            <li>Duration: 3 Years (180 ECTS)</li>
+                            <li>Format: On-Campus / Hybrid</li>
+                        </ul>
+                        <a href="registration.html" class="btn btn-outline-eagle btn-sm w-100">Select Track</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 program-card-item" data-category="bioscience">
+                    <article class="hs-grid-box">
+                        <span class="section-label">Bio & Eco Engineering</span>
+                        <h3 class="h5">Bioengineering & Genetics</h3>
+                        <p class="text-secondary small">Molecular genetics, nucleic acid engineering, human physiology, and biomaterials.</p>
+                        <ul class="small text-secondary ps-3 mb-4">
+                            <li>Duration: 4 Years (240 ECTS)</li>
+                            <li>Format: On-Campus Lab Intensive</li>
+                        </ul>
+                        <a href="registration.html" class="btn btn-outline-eagle btn-sm w-100">Select Track</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 program-card-item" data-category="security">
+                    <article class="hs-grid-box">
+                        <span class="section-label">Systems & Cyber</span>
+                        <h3 class="h5">Cybersecurity & Network Defense</h3>
+                        <p class="text-secondary small">Wireshark packet inspection, Cisco routing, Linux hardening, and phishing countermeasures.</p>
+                        <ul class="small text-secondary ps-3 mb-4">
+                            <li>Duration: 3 Years (180 ECTS)</li>
+                            <li>Format: On-Campus / Online</li>
+                        </ul>
+                        <a href="registration.html" class="btn btn-outline-eagle btn-sm w-100">Select Track</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 program-card-item" data-category="bioscience">
+                    <article class="hs-grid-box">
+                        <span class="section-label">Bio & Eco Engineering</span>
+                        <h3 class="h5">Sustainable Chemical Tech</h3>
+                        <p class="text-secondary small">Organic chemistry, reaction stoichiometry, and circular agro-fertilizer formulation.</p>
+                        <ul class="small text-secondary ps-3 mb-4">
+                            <li>Duration: 4 Years (240 ECTS)</li>
+                            <li>Format: On-Campus Lab Intensive</li>
+                        </ul>
+                        <a href="registration.html" class="btn btn-outline-eagle btn-sm w-100">Select Track</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 program-card-item" data-category="computing">
+                    <article class="hs-grid-box">
+                        <span class="section-label">Computing & AI</span>
+                        <h3 class="h5">Data Science & Applied Math</h3>
+                        <p class="text-secondary small">Calculus, statistical modeling, machine learning pipelines, and predictive analytics.</p>
+                        <ul class="small text-secondary ps-3 mb-4">
+                            <li>Duration: 3 Years (180 ECTS)</li>
+                            <li>Format: Hybrid</li>
+                        </ul>
+                        <a href="registration.html" class="btn btn-outline-eagle btn-sm w-100">Select Track</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 program-card-item" data-category="security">
+                    <article class="hs-grid-box">
+                        <span class="section-label">Systems & Cyber</span>
+                        <h3 class="h5">Embedded & Robotics Systems</h3>
+                        <p class="text-secondary small">Microcontrollers, autonomous drone navigation, and low-level C++ firmware.</p>
+                        <ul class="small text-secondary ps-3 mb-4">
+                            <li>Duration: 4 Years (240 ECTS)</li>
+                            <li>Format: On-Campus</li>
+                        </ul>
+                        <a href="registration.html" class="btn btn-outline-eagle btn-sm w-100">Select Track</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center text-secondary small">
+            © 2026 Engineering College — Home of the Bald Eagles.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
